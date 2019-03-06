@@ -7,18 +7,17 @@ class Api::V1::StatsController < ApplicationController
 
   def create
     @stat = Stat.create(stat_params)
-    if @stat.valid?
-      render json: @stat, status: :created
-    else
-      render json: {errors: @stat.error.full_messages}, status: :unprocessible_entity
-    end
+    render json: @stat, status: :created
   end
 
+  # find or create by user. Set this to a variable
+  # stat.create with a the three params i need to create (high_score, line_clear, user_id)
+  # find or create by User
 
   private
 
   def stat_params
-    params.permit(:high_score, :line_clear)
+    params.permit(:high_score, :line_clear, :initials)
   end
 
 end

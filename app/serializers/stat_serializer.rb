@@ -1,4 +1,8 @@
 class StatSerializer < ActiveModel::Serializer
-  attributes :id, :high_score, :line_clear, :user_id
-  belongs_to :user
+  attributes :high_score, :line_clear, :initials
+  # def username
+  #   # byebug
+  #   object.user.username
+  # end
+
 end

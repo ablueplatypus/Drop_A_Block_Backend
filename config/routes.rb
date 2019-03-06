@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
         resources :users, :stats, only: [:index, :create]
-        # post 'user/:login', to: 'users#login', as: 'loggin_page'
+        # post 'user/login', to: 'users#login', as: 'loggin_page'
       end
     end
 

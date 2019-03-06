@@ -18,10 +18,9 @@ ActiveRecord::Schema.define(version: 2019_03_03_204416) do
   create_table "stats", force: :cascade do |t|
     t.integer "high_score"
     t.integer "line_clear"
-    t.bigint "user_id"
+    t.string "initials"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_stats_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
