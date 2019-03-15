@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
         resources :users, :stats, only: [:index, :create]
         # post 'user/login', to: 'users#login', as: 'loggin_page'
+        get '/', to: 'stats#index', as: 'heroku_home'
       end
     end
 
