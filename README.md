@@ -7,8 +7,7 @@ This is the backend to a front-end React Tetris game.
 
 Created by Matthew Doering
 
-
-* Ruby version : 2.3.3p222
+* Ruby version : 2.6.0
 
 * System dependencies
 
